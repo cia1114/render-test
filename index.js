@@ -5,6 +5,8 @@ const app = express()
 const cors = require('cors')
 app.use(cors())
 
+app.use(express.static('dist'))
+
 app.use(express.json())  //Activar el middleware json-parser para acceder a los datos facilmente.
 
 //Al final del cuerpo de la función, se llama a la función next que se pasó como parámetro.
